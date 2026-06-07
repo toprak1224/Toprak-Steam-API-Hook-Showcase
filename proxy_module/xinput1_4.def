@@ -1,0 +1,16 @@
+LIBRARY xinput1_4
+EXPORTS
+    XInputGetState = Fake_XInputGetState @1
+    XInputSetState = Fake_XInputSetState @2
+    XInputGetCapabilities = Fake_XInputGetCapabilities @3
+    XInputEnable = Fake_XInputEnable @4
+    XInputGetAudioDeviceIds = Fake_XInputGetAudioDeviceIds @5
+    XInputGetBatteryInformation = Fake_XInputGetBatteryInformation @6
+    XInputGetKeystroke = Fake_XInputGetKeystroke @7
+    
+    ; Undocumented Ordinals required by Steam / Big Picture Mode
+    Fake_XInputOrdinal100 @100 NONAME
+    Fake_XInputOrdinal101 @101 NONAME
+    Fake_XInputOrdinal102 @102 NONAME
+    Fake_XInputOrdinal103 @103 NONAME
+    Fake_XInputOrdinal104 @104 NONAME
